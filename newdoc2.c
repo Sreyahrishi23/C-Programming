@@ -23,7 +23,14 @@ int main(){
 fclose(fp1);
 fclose(fp2);
 fclose(fp3);
+printf("\nThe input text file contents:");
 fp1=fopen("number.txt","r");
 readFile(fp1);
+printf("\nThe odd number file contents:");
+fp2=fopen("odd.txt","r");
+readFile(fp2);
+printf("\nThe even number file contents:");
+fp3=fopen("even.txt","r");
+readFile(fp3);
 return 0;
 }  
